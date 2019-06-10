@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Thermal_AR_Tile_Parts)(type Legacy)(uri ${KIPRJMOD}/Thermal_AR_Tile_Parts.lib)(options "")(descr ""))
+)

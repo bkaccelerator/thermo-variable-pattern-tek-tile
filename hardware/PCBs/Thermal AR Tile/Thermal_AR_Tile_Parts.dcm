@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PSMN022-30PL
+D 30A, 30V Vds, N-Channel MOSFET, 22mOhm Ron, TO220
+K N-Channel MOSFET
+F https://assets.nexperia.com/documents/data-sheet/PSMN022-30PL.pdf
+$ENDCMP
+#
+#End Doc Library

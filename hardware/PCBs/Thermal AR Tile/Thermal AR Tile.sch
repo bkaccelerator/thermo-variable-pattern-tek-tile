@@ -1,0 +1,474 @@
+EESchema Schematic File Version 4
+LIBS:Thermal AR Tile-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Thermal_AR_Tile_Parts:Adafruit_Metro_Mini_328 U1
+U 1 1 5CB90576
+P 6000 5050
+F 0 "U1" H 6000 5875 50  0000 C CNN
+F 1 "Adafruit_Metro_Mini_328" H 6000 5784 50  0000 C CNN
+F 2 "Thermal AR Tile:Adafruit_Metro_Mini_328" H 6000 5050 50  0001 C CNN
+F 3 "" H 6000 5050 50  0001 C CNN
+	1    6000 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5CB91CB4
+P 3800 3400
+F 0 "D1" H 3793 3145 50  0000 C CNN
+F 1 "LED_A" H 3793 3236 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 3800 3400 50  0001 C CNN
+F 3 "~" H 3800 3400 50  0001 C CNN
+	1    3800 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5CB93E9C
+P 6000 3400
+F 0 "D2" H 5993 3145 50  0000 C CNN
+F 1 "LED_B" H 5993 3236 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 6000 3400 50  0001 C CNN
+F 3 "~" H 6000 3400 50  0001 C CNN
+	1    6000 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Thermal_AR_Tile_Parts:PSMN022-30PL Q2
+U 1 1 5CB9B78A
+P 5500 3150
+F 0 "Q2" V 5843 3150 50  0000 C CNN
+F 1 "PSMN022-30PL" V 5752 3150 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 5650 3150 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PSMN022-30PL.pdf" H 5500 3150 50  0001 C CNN
+	1    5500 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Thermal_AR_Tile_Parts:PSMN022-30PL Q1
+U 1 1 5CB9CB01
+P 3300 3150
+F 0 "Q1" V 3643 3150 50  0000 C CNN
+F 1 "PSMN022-30PL" V 3552 3150 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 3450 3150 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PSMN022-30PL.pdf" H 3300 3150 50  0001 C CNN
+	1    3300 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5CB9DBDD
+P 3300 3600
+F 0 "R1" H 3370 3646 50  0000 L CNN
+F 1 "10K" H 3370 3555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3230 3600 50  0001 C CNN
+F 3 "~" H 3300 3600 50  0001 C CNN
+	1    3300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CB9E03B
+P 5500 3600
+F 0 "R2" H 5570 3646 50  0000 L CNN
+F 1 "10K" H 5570 3555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5430 3600 50  0001 C CNN
+F 3 "~" H 5500 3600 50  0001 C CNN
+	1    5500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3350 3300 3400
+$Comp
+L power:GND #PWR0101
+U 1 1 5CBA569C
+P 4000 3800
+F 0 "#PWR0101" H 4000 3550 50  0001 C CNN
+F 1 "GND" H 4005 3627 50  0000 C CNN
+F 2 "" H 4000 3800 50  0001 C CNN
+F 3 "" H 4000 3800 50  0001 C CNN
+	1    4000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5CBA5FE6
+P 3300 3800
+F 0 "#PWR0102" H 3300 3550 50  0001 C CNN
+F 1 "GND" H 3305 3627 50  0000 C CNN
+F 2 "" H 3300 3800 50  0001 C CNN
+F 3 "" H 3300 3800 50  0001 C CNN
+	1    3300 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3750 3300 3800
+Connection ~ 3300 3400
+Wire Wire Line
+	3300 3400 3300 3450
+$Comp
+L power:GND #PWR0103
+U 1 1 5CBA87DF
+P 6200 3800
+F 0 "#PWR0103" H 6200 3550 50  0001 C CNN
+F 1 "GND" H 6205 3627 50  0000 C CNN
+F 2 "" H 6200 3800 50  0001 C CNN
+F 3 "" H 6200 3800 50  0001 C CNN
+	1    6200 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5CBA8F66
+P 5500 3800
+F 0 "#PWR0104" H 5500 3550 50  0001 C CNN
+F 1 "GND" H 5505 3627 50  0000 C CNN
+F 2 "" H 5500 3800 50  0001 C CNN
+F 3 "" H 5500 3800 50  0001 C CNN
+	1    5500 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3750 5500 3800
+Wire Wire Line
+	5500 3350 5500 3400
+Wire Wire Line
+	5550 3400 5500 3400
+Connection ~ 5500 3400
+Wire Wire Line
+	5500 3400 5500 3450
+Wire Wire Line
+	3000 2400 3000 2500
+Wire Wire Line
+	3000 2500 3100 2500
+Wire Wire Line
+	3000 2600 3000 3050
+Wire Wire Line
+	3000 2600 3100 2600
+Wire Wire Line
+	3000 3050 3100 3050
+Wire Wire Line
+	5300 2600 5200 2600
+Wire Wire Line
+	5200 2600 5200 3050
+Wire Wire Line
+	5200 3050 5300 3050
+$Comp
+L power:+12V #PWR0105
+U 1 1 5CBA9CAC
+P 3000 2400
+F 0 "#PWR0105" H 3000 2250 50  0001 C CNN
+F 1 "+12V" H 3015 2573 50  0000 C CNN
+F 2 "" H 3000 2400 50  0001 C CNN
+F 3 "" H 3000 2400 50  0001 C CNN
+	1    3000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0106
+U 1 1 5CBB32A6
+P 5200 2400
+F 0 "#PWR0106" H 5200 2250 50  0001 C CNN
+F 1 "+12V" H 5215 2573 50  0000 C CNN
+F 2 "" H 5200 2400 50  0001 C CNN
+F 3 "" H 5200 2400 50  0001 C CNN
+	1    5200 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2400 5200 2500
+Wire Wire Line
+	5200 2500 5300 2500
+Wire Wire Line
+	5500 4650 5200 4650
+Wire Wire Line
+	5200 4650 5200 3400
+Wire Wire Line
+	5200 3400 5500 3400
+Wire Wire Line
+	3300 3400 3000 3400
+Wire Wire Line
+	6500 5250 6600 5250
+Wire Wire Line
+	6600 5250 6600 5350
+Wire Wire Line
+	6600 5350 6500 5350
+Wire Wire Line
+	6600 5350 6600 5900
+Connection ~ 6600 5350
+$Comp
+L power:GND #PWR0107
+U 1 1 5CBBD3D4
+P 6600 5900
+F 0 "#PWR0107" H 6600 5650 50  0001 C CNN
+F 1 "GND" H 6605 5727 50  0000 C CNN
+F 2 "" H 6600 5900 50  0001 C CNN
+F 3 "" H 6600 5900 50  0001 C CNN
+	1    6600 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:uA7805 U2
+U 1 1 5CB8CEB1
+P 7150 2500
+F 0 "U2" H 7150 2742 50  0000 C CNN
+F 1 "uA7805" H 7150 2651 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 7175 2350 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/ua78.pdf" H 7150 2450 50  0001 C CNN
+	1    7150 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0108
+U 1 1 5CB8DF8A
+P 6750 2400
+F 0 "#PWR0108" H 6750 2250 50  0001 C CNN
+F 1 "+12V" H 6765 2573 50  0000 C CNN
+F 2 "" H 6750 2400 50  0001 C CNN
+F 3 "" H 6750 2400 50  0001 C CNN
+	1    6750 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2400 6750 2500
+Wire Wire Line
+	6750 2500 6850 2500
+$Comp
+L power:GND #PWR0109
+U 1 1 5CB90F60
+P 7150 2900
+F 0 "#PWR0109" H 7150 2650 50  0001 C CNN
+F 1 "GND" H 7155 2727 50  0000 C CNN
+F 2 "" H 7150 2900 50  0001 C CNN
+F 3 "" H 7150 2900 50  0001 C CNN
+	1    7150 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2800 7150 2900
+$Comp
+L power:+5V #PWR0110
+U 1 1 5CB91E9A
+P 7550 2400
+F 0 "#PWR0110" H 7550 2250 50  0001 C CNN
+F 1 "+5V" H 7565 2573 50  0000 C CNN
+F 2 "" H 7550 2400 50  0001 C CNN
+F 3 "" H 7550 2400 50  0001 C CNN
+	1    7550 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 2500 7550 2500
+Wire Wire Line
+	7550 2500 7550 2400
+$Comp
+L power:+5V #PWR0111
+U 1 1 5CB92E2B
+P 6700 5250
+F 0 "#PWR0111" H 6700 5100 50  0001 C CNN
+F 1 "+5V" H 6715 5423 50  0000 C CNN
+F 2 "" H 6700 5250 50  0001 C CNN
+F 3 "" H 6700 5250 50  0001 C CNN
+	1    6700 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 5250 6700 5450
+Wire Wire Line
+	6700 5450 6500 5450
+$Comp
+L power:+12V #PWR0112
+U 1 1 5CBA12EC
+P 1950 2350
+F 0 "#PWR0112" H 1950 2200 50  0001 C CNN
+F 1 "+12V" H 1965 2523 50  0000 C CNN
+F 2 "" H 1950 2350 50  0001 C CNN
+F 3 "" H 1950 2350 50  0001 C CNN
+	1    1950 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5CBA1736
+P 1950 2650
+F 0 "#PWR0113" H 1950 2400 50  0001 C CNN
+F 1 "GND" H 1955 2477 50  0000 C CNN
+F 2 "" H 1950 2650 50  0001 C CNN
+F 3 "" H 1950 2650 50  0001 C CNN
+	1    1950 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2450 1950 2450
+Wire Wire Line
+	1950 2450 1950 2350
+Wire Wire Line
+	1850 2550 1950 2550
+Wire Wire Line
+	1950 2550 1950 2650
+$Comp
+L Connector:Conn_01x02_Female J3
+U 1 1 5CBAB4DA
+P 5500 2500
+F 0 "J3" H 5528 2476 50  0000 L CNN
+F 1 "Heater1" H 5528 2385 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5500 2500 50  0001 C CNN
+F 3 "~" H 5500 2500 50  0001 C CNN
+	1    5500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 5CBAA82A
+P 3300 2500
+F 0 "J2" H 3328 2476 50  0000 L CNN
+F 1 "Heater2" H 3328 2385 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3300 2500 50  0001 C CNN
+F 3 "~" H 3300 2500 50  0001 C CNN
+	1    3300 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 5CBA07DF
+P 1650 2550
+F 0 "J1" H 1542 2317 50  0000 C CNN
+F 1 "Power_12V" H 1542 2316 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1650 2550 50  0001 C CNN
+F 3 "~" H 1650 2550 50  0001 C CNN
+	1    1650 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3500 3050 4000 3050
+Wire Wire Line
+	5700 3050 6200 3050
+$Comp
+L Device:R R3
+U 1 1 5CD4C0C6
+P 3500 3400
+F 0 "R3" V 3293 3400 50  0000 C CNN
+F 1 "330" V 3384 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3430 3400 50  0001 C CNN
+F 3 "~" H 3500 3400 50  0001 C CNN
+	1    3500 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5CD4D3C2
+P 5700 3400
+F 0 "R4" V 5493 3400 50  0000 C CNN
+F 1 "330" V 5584 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5630 3400 50  0001 C CNN
+F 3 "~" H 5700 3400 50  0001 C CNN
+	1    5700 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 3050 4000 3400
+Wire Wire Line
+	3350 3400 3300 3400
+Wire Wire Line
+	3950 3400 4000 3400
+Connection ~ 4000 3400
+Wire Wire Line
+	4000 3400 4000 3800
+Wire Wire Line
+	6200 3050 6200 3400
+Wire Wire Line
+	6200 3400 6150 3400
+Connection ~ 6200 3400
+Wire Wire Line
+	6200 3400 6200 3800
+$Comp
+L Switch:SW_SPST SW2
+U 1 1 5CF7FAD5
+P 4850 3400
+F 0 "SW2" H 4850 3635 50  0000 C CNN
+F 1 "SW_HEAT_B" H 4850 3544 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4850 3400 50  0001 C CNN
+F 3 "~" H 4850 3400 50  0001 C CNN
+	1    4850 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4850 3000 4850
+Wire Wire Line
+	3000 3400 3000 4850
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5CF7F168
+P 2650 3400
+F 0 "SW1" H 2650 3635 50  0000 C CNN
+F 1 "SW_HEAT_A" H 2650 3544 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2650 3400 50  0001 C CNN
+F 3 "~" H 2650 3400 50  0001 C CNN
+	1    2650 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3400 5050 4750
+Wire Wire Line
+	5050 4750 5500 4750
+Wire Wire Line
+	2850 3400 2850 4950
+Wire Wire Line
+	2850 4950 5500 4950
+$Comp
+L power:GND #PWR0114
+U 1 1 5CF8F092
+P 4650 3800
+F 0 "#PWR0114" H 4650 3550 50  0001 C CNN
+F 1 "GND" H 4655 3627 50  0000 C CNN
+F 2 "" H 4650 3800 50  0001 C CNN
+F 3 "" H 4650 3800 50  0001 C CNN
+	1    4650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5CF8FD15
+P 2450 3800
+F 0 "#PWR0115" H 2450 3550 50  0001 C CNN
+F 1 "GND" H 2455 3627 50  0000 C CNN
+F 2 "" H 2450 3800 50  0001 C CNN
+F 3 "" H 2450 3800 50  0001 C CNN
+	1    2450 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3400 2450 3800
+Wire Wire Line
+	4650 3400 4650 3800
+Text Notes 700  3450 0    50   ~ 0
+Each switch controls its associated heater
+Text Notes 3700 2950 0    50   ~ 0
+LEDs indicate\nwhen a heater is active
+Wire Notes Line
+	3650 2800 3650 3000
+Wire Notes Line
+	3650 3000 4150 3000
+Wire Notes Line
+	4150 3000 4150 3400
+Wire Notes Line
+	4150 3400 4100 3400
+Text Notes 3450 2550 0    50   ~ 0
+To heater
+Text Notes 1150 2500 0    50   ~ 0
+Power input
+$EndSCHEMATC
